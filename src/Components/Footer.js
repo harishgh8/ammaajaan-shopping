@@ -72,16 +72,6 @@ function Footer() {
         </div>
         <div className="developer">
           <img src={Logo} className="ammaajaan-img" />
-          <div className="dev-data">
-            <p>&copy; 2023 | Developed by </p>
-            <a
-              className="dev-link"
-              href="https://github.com/shubho0908"
-              target="_blank"
-            >
-              Harish Gh, Waterloo, Ontario
-            </a>
-          </div>
         </div>
       </div>
     </>
