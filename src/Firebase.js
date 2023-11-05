@@ -1,14 +1,23 @@
 import { initializeApp } from "firebase/app";
 
+// const firebaseConfig = {
+//   apiKey: "AIzaSyAPUQHqHeI-gbGAs4ritwLH7Pk0z_ClvLE",
+//   authDomain: "ammaajaan-shop.firebaseapp.com",
+//   projectId: "ammaajaan-shop",
+//   storageBucket: "ammaajaan-shop.appspot.com",
+//   messagingSenderId: "99445336390",
+//   appId: "1:99445336390:web:e8f9bccc7e8b4383601d47",
+//   measurementId: "G-2J04P6BX07",
+// };
 const firebaseConfig = {
-  apiKey: "AIzaSyCwp9V5aNBu5E0SsLH1y4qJrLL8QWUKGhM",
-  authDomain: "clone-6abe8.firebaseapp.com",
-  projectId: "clone-6abe8",
-  storageBucket: "clone-6abe8.appspot.com",
-  messagingSenderId: "752575321294",
-  appId: "1:752575321294:web:061c2c5c5aeed11253ec9f"
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_FIREBASE_APP_ID,
+  measurementId: process.env.REACT_APP_FIREBASE_MEASUREMENT_ID,
 };
 
 // Initialize Firebase
 export const app = initializeApp(firebaseConfig);
-
